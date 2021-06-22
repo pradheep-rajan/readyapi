@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="v2" path="/v2/pet/{petId}" id="ea32bde4-3088-43e4-bc01-58b979201243" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="ea32bde4-3088-43e4-bc01-58b979201243fileName">v2</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter>
+      <con:name>petId</con:name>
+      <con:value/>
+      <con:style>TEMPLATE</con:style>
+      <con:default/>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="Method 1" id="fc3db6cb-e3e2-4637-9e5b-945322eb2555" method="DELETE">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="delete" id="448119e5-d5c9-40c0-ada3-1f8a99cbda80" mediaType="application/json" postQueryString="false">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>https://petstore.swagger.io</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="petId" value=""/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>petId</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>
